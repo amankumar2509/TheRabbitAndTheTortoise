@@ -34,7 +34,7 @@ public class Tortoise implements Runnable{
             try {
                 Thread.sleep(3000L);
             }catch (InterruptedException e){
-                System.out.println("The Tortoise has lost the paths ");
+                System.out.println("The Tortoise has lost the paths! ");
             }
 
         }
