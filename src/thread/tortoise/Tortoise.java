@@ -13,6 +13,9 @@ public class Tortoise implements Runnable{
 
     @Override
     public void run() {
+        for (int index = 0; index < MILESTONES; index++) {
+
+        }
 
     }
 }
