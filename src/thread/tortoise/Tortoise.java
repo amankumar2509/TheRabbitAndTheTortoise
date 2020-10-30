@@ -6,6 +6,11 @@ public class Tortoise implements Runnable{
     public Tortoise(){
         this.tortise=new Thread(this,"Tortise");
     }
+
+    public Thread getTortise() {
+        return tortise;
+    }
+
     @Override
     public void run() {
 
