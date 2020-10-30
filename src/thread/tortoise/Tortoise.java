@@ -4,13 +4,13 @@ import javax.swing.*;
 
 public class Tortoise implements Runnable{
     private static  final int MILESTONES = 5;
-    private final Thread tortise;
+    private final Thread tortoise;
     public Tortoise(){
-        this.tortise=new Thread(this,"Tortise");
+        this.tortoise=new Thread(this,"Tortoise");
     }
 
-    public Thread getTortise() {
-        return tortise;
+    public Thread getTortoise() {
+        return tortoise;
     }
 
     @Override
@@ -36,16 +36,16 @@ public class Tortoise implements Runnable{
             try {
                 Thread.sleep(3000L);
             }catch (InterruptedException e){
-                System.out.println("The Tortoise has lost the paths! ");
+                System.err.println("The Tortoise has lost the paths! ");
             }
-            JOptionPane.showConfirmDialog(
-                    null,
-                    "The tortoise has completed the race!",
-                    "Tortoise",
-                    JOptionPane.OK_CANCEL_OPTION
-            );
 
         }
+        JOptionPane.showConfirmDialog(
+                null,
+                "The Tortoise has completed the path!",
+                "Tortoise",
+                JOptionPane.OK_CANCEL_OPTION
+        );
 
     }
 }

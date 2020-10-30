@@ -8,6 +8,6 @@ public class Race {
         Rabbit rabbit = new Rabbit();
         rabbit.getRabbit().start();
         Tortoise tortoise = new Tortoise();
-        tortoise.getTortise().start();
+        tortoise.getTortoise().start();
     }
 }
